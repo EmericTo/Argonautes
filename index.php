@@ -60,7 +60,7 @@
       echo $ligne ['name'];
       echo "</div>";
     }
-    
+    // fonction deconnection
     $db = Database::disconnect()
     
     ?>
