@@ -35,7 +35,7 @@
             $requete = "INSERT INTO argonautes VALUES(NULL, '" . $_POST['name'] . "')";
             $resultat = $db->query($requete);
             if ($resultat)
-            echo '<p style="text-align: center;">Bienvenue à bord</p>';
+            echo "<p style='text-align: center;'>Bienvenue à bord $pseudo</p>";
 
             else
             echo "<p>Erreur</p>";
