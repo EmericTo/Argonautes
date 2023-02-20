@@ -53,7 +53,7 @@
   <section class="member-list">
    
 <?php
-    // requete sql pour récupérer les données de la table argonaute de la db et on utilise un foreach afin de parcourir la table car type array (gettype) et afficher les donnée avec un echo
+    // requete sql pour récupérer les données de la table argonaute de la db et on utilise un foreach afin de parcourir la table car type array (gettype) et afficher les données avec un echo
 		$requete = "SELECT * FROM argonautes";
     $resultat = $db->query($requete);
     $memberlist = $resultat->fetchAll();
