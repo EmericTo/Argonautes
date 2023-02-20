@@ -30,6 +30,8 @@
          require 'database.php';
         $db = Database::connect();
 
+        // methode post pour recupérer le nom inscrit dans le input et requete sql pour l'insérer dans la table argonautes de la db
+
         if (isset ($_POST['envoyer'])){ 
             $pseudo=$_POST['name'];
             $requete = "INSERT INTO argonautes VALUES(NULL, '" . $_POST['name'] . "')";
@@ -51,7 +53,7 @@
   <section class="member-list">
    
 <?php
-
+    // requete sql pour récupérer les données de la table argonaute de la db et on utilise un foreach afin de parcourir la table car type array (gettype) et afficher les donnée avec un echo
 		$requete = "SELECT * FROM argonautes";
     $resultat = $db->query($requete);
     $memberlist = $resultat->fetchAll();
